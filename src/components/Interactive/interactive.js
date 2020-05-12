@@ -10,12 +10,12 @@ const Interactive = () => {
         if (clickAgain != 1) {
             setClickAgain(1);
             let list = colors;
-            if (currentIndex < colors.length - 1) {
+            if (currentIndex < list.length - 1) {
                 list.length = currentIndex + 1;
             }
             list.push("red");
             setColors(list)
-            setCurrentIndex(colors.length - 1);
+            setCurrentIndex(list.length - 1);
         }
     }
 
@@ -23,12 +23,12 @@ const Interactive = () => {
         if (clickAgain != 2) {
             setClickAgain(2);
             let list = colors;
-            if (currentIndex < colors.length - 1) {
+            if (currentIndex < list.length - 1) {
                 list.length = currentIndex + 1;
             }
             list.push("green");
             setColors(list)
-            setCurrentIndex(colors.length - 1);
+            setCurrentIndex(list.length - 1);
         }
     }
 
@@ -36,12 +36,12 @@ const Interactive = () => {
         if (clickAgain != 3) {
             setClickAgain(3);
             let list = colors;
-            if (currentIndex < colors.length - 1) {
+            if (currentIndex < list.length - 1) {
                 list.length = currentIndex + 1;
             }
             list.push("blue");
             setColors(list)
-            setCurrentIndex(colors.length - 1);
+            setCurrentIndex(list.length - 1);
         }
     }
 
